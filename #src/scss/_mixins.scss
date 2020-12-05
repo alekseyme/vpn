@@ -1,0 +1,28 @@
+@mixin fontmain($weight) {
+	font-family: '', sans-serif;
+	font-weight: $weight;
+}
+@mixin fontsecondary($weight) {
+	font-family: '', sans-serif;
+	font-weight: $weight;
+}
+@mixin transition {
+	transition: all .3s;
+}
+@mixin hcenter {
+	left: 50%;
+	transform: translateX(-50%);
+}
+@mixin vcenter {
+	top: 50%;
+	transform: translateY(-50%);
+}
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+	font-family: $font_name;
+	font-display: swap;
+	src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+	font-weight: #{$weight};
+	font-style: #{$style};
+	}
+}
