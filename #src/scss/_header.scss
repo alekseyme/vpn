@@ -1,0 +1,27 @@
+.header {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  }
+
+  &__logo {
+  }
+
+  &__menu {
+  }
+
+  &__auth {
+  }
+}
+.auth {
+
+  &__signin {
+  }
+
+  &__signup {
+    padding: 13px 45px;
+    margin-left: 30px;
+  }
+}

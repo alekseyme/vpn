@@ -1,24 +1,24 @@
-@import "lib";
-@import "null";
-@import "mixins";
-@import "fonts";
+@import 'lib';
+@import 'null';
+@import 'mixins';
+@import 'fonts';
 
 // Vars
-$black: #4F5665;
-$black-accent: #0B132A;
-$accent: #F53855;
+$black: #4f5665;
+$black-accent: #0b132a;
+$accent: #f53855;
 
 // Mixins
 @mixin text-pr {
-	font-size: 16px;
-	line-height: 30px;
+  font-size: 16px;
+  line-height: 30px;
 }
 @mixin text-sd {
-	font-size: 16px;
-	line-height: 30px;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 // Common
-@import "common";
-// @import "header";
+@import 'common';
+@import 'header';
 // @import "footer";

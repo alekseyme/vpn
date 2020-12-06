@@ -1,5 +1,4 @@
 body {
-	overflow-x: hidden;
 	font-family: 'Rubik', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
@@ -13,10 +12,62 @@ body {
 	margin: 0 auto;
 }
 
+.btn {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border: 1px solid $accent;
+	color: $accent;
+	background: #fff;
+
+	&:hover {		
+		background: $accent;
+		color: #fff;
+	}
+
+	&--rounded {
+		border-radius: 50px;
+	}
+
+	&--filled {
+		background: $accent;
+		color: #fff;
+
+		&:hover {		
+			background: #fff;
+			color: $accent;
+		}
+
+	}
+}
+
+.menu {
+
+  &__list {
+		display: flex;
+  }
+
+  &__list-item {
+		&+& {
+			margin-left: 40px;
+		}
+  }
+}
+
 .title {
 	font-weight: 500;
 	font-size: 35px;
 	line-height: 50px;
 	margin-bottom: 20px;
 	color: $black-accent;
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.main { 
+	flex: 1 1 auto;
 }
